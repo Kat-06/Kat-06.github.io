@@ -43,3 +43,45 @@ margin-right: 10px;
 img.dibley {
     max-width: 100%
 }
+
+.wrapper { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.container-fluid {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box1 {
+  grid-column: span 3;
+  grid-row: span 2;
+  background-color: #ff9aa2;
+}
+
+.box2 { 
+  grid-row: span 2;
+  background-color: #ffb7b2;
+}
+
+.box3 {
+  grid-column: 2 / span 2;
+  background-color: #ffdac1;
+}
+
+.box4 {
+  background-color: #e2f0cb;
+}
+
+.box5 {
+  background-color: #b5ead7;
+}
+
+.box6 {
+  grid-column: span 3;
+  background-color: #c7ceea;
+}
