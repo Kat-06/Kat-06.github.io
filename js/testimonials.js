@@ -10,3 +10,11 @@ document.getElementById('testimonialForm').addEventListener('submit', function(e
         document.getElementById('thankYouMessage').classList.remove('hidden');
     }
 });
+
+<script>
+    $(document).ready(function () {
+        $('.navbar-toggler').click(function () {
+            $('#navbarNav').toggleClass('show');
+        })}
+    );
+</script>
