@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
 
-
-/*GLOBAL*/
 body {
     padding-top: 5rem;
 
@@ -24,18 +22,6 @@ p {
     font-size: 1.6rem;
 }
 
-nav {
-    margin-bottom: 120px;
-}
-
-.navbar-brand {
-    margin-left: 20px;
-}
-
-button.navbar-toggler{
-margin-right: 10px;
-}
-
 .home_2col {
     margin-bottom: 20px;
 }
@@ -44,44 +30,61 @@ img.dibley {
     max-width: 100%
 }
 
-.wrapper { 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 10px;
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
 }
 
-.container-fluid {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
 }
 
-.box1 {
-  grid-column: span 3;
-  grid-row: span 2;
-  background-color: #ff9aa2;
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-.box2 { 
-  grid-row: span 2;
-  background-color: #ffb7b2;
+.navbar-nav li {
+    display: inline-block;
 }
 
-.box3 {
-  grid-column: 2 / span 2;
-  background-color: #ffdac1;
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
 }
 
-.box4 {
-  background-color: #e2f0cb;
+.navbar-nav a:hover {
+    background-color: #f1a7c1;
+    color: #333;
 }
 
-.box5 {
-  background-color: #b5ead7;
+@media (max-width: 767px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-nav.show {
+        display: flex;
+    }
 }
 
-.box6 {
-  grid-column: span 3;
-  background-color: #c7ceea;
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #d0b3b3;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1rem;
 }

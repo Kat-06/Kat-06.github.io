@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Katarina Bloch's personal website - a page dedicated to customer reviews.">
+    <title>Bloch: Testimonials</title>
+    <link href="css/styles5.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Katarina Bloch</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carousel.html">Carousel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <section class="testimonials">
+       <br>
+        <h1>What People Are Saying</h1>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"Working with Katarina was an absolute pleasure! She really brought my vision to life with her design skills."</p>
+                <h3>- Client 1</h3>
+            </div>
+            <div class="testimonial-card">
+                <p>"A fantastic user experience design! I saw an immediate improvement in user engagement after implementing her suggestions."</p>
+                <h3>- Client 2</h3>
+            </div>
+            <div class="testimonial-card">
+                <p>"I am so pleased with the graphic design work! The attention to detail was exceptional."</p>
+                <h3>- Client 3</h3>
+            </div>
+        </div>
+
+        <h2>Share Your Feedback</h2>
+        <form id="testimonialForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="testimonial">Your Testimonial:</label>
+            <textarea id="testimonial" name="testimonial" rows="4" required></textarea>
+
+            <button type="submit">Submit Testimonial</button>
+        </form>
+
+        <div id="thankYouMessage" class="hidden">
+            <p>Thank you for your feedback!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Katarina Bloch. All rights reserved.</p>
+      </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="testimonials.js"></script>
+</body>
+</html>
